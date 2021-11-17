@@ -24,14 +24,14 @@ cargo install cargo-blflash
 cargo build
 ```
 
-将 GPIO 8 (D8) 连接到开发板的 3.3V，按一下EN键。 
+按住D8键不放(即GPIO 8 连接至 3.3V)，按一下EN键
 
 运行
 ```
 cargo blflash --port COM4
 ```
 
-断开 GPIO 8 的高电位，按下EN键，使用串口工具链接COM4，可看到输出结果。
+烧写成功后，松开 D8键，按一下EN键，使用串口工具链接COM4，可看到输出结果。
 
 
 
